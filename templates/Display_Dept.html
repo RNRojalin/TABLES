@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data displaying from BE to FE</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>DeptNo</th>
+                <th>DName</th>
+                <th>Loc</th>
+            </tr>
+            {% for DO in dept %}
+            <tr>
+                <td>{{DO.DeptNo}}</td>
+                <td>{{DO.DName}}</td>
+                <td>{{DO.Loc}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>

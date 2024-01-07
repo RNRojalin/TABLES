@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data displying from BE to FE</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>EmpNo</th>
+                <th>EName</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>Commision</th>
+                <th>DeptNo</th>
+            </tr>
+            {% for EO in emp %}
+            <tr>
+                <td>{{EO.EmpNo}}</td>
+                <td>{{EO.EName}}</td>
+                <td>{{EO.Job}}</td>
+                <td>{{EO.Mgr}}</td>
+                <td>{{EO.Hiredate}}</td>
+                <td>{{EO.Sal}}</td>
+                <td>{{EO.Commision}}</td>
+                <td>{{EO.DeptNo}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
